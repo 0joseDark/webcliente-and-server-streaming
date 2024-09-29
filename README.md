@@ -13,5 +13,5 @@
 # pip freeze > requirements.txt
 # pip install -r requirements.txt
 
-![cliente](./imagens/cliente.jpg)
+![cliente](https://github.com/0joseDark/webcliente-and-server-streaming/blob/main/image/cliente.jpg)
 
