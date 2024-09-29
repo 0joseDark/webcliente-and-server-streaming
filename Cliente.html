@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente de Vídeo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        #container {
+            text-align: center;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #aaa;
+        }
+
+        video {
+            margin-top: 20px;
+            width: 600px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Cliente de Streaming de Vídeo</h2>
+        <input id="server-url" type="text" placeholder="Insira a URL do servidor" />
+        <input id="server-port" type="text" placeholder="Porta do servidor" />
+
+        <div>
+            <button id="connect-button" onclick="connect()">Ligar</button>
+            <button id="disconnect-button" onclick="disconnect()" disabled>Desligar</button>
+            <button onclick="exit()">Sair</button>
+        </div>
+
+        <video id="video-stream" controls autoplay></video>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
