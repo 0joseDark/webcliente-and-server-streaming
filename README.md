@@ -12,3 +12,6 @@
 "
 # pip freeze > requirements.txt
 # pip install -r requirements.txt
+
+![cliente](./imagens/cliente.jpg)
+
